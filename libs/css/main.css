@@ -14,6 +14,17 @@ body {
     margin-left: 5rem;
 }
 
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+}
+
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:active {
+    background-color: #fede09;
+}
+
 .navbar-brand .caption {
     font-family: 'Andada', serif;
     font-weight:700;
@@ -36,7 +47,7 @@ body {
 
 .navbar-default .navbar-nav>li {
     font-family: 'Montserrat', sans-serif;
-    margin-right:2rem;
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -79,15 +90,16 @@ body {
 {
     background-color:rgba(0,0,0,0.2);
     color:#f5af40;
-    
+
 }
 
 .fa {
     color:#ffffff;
     border-radius: 50%;
     border:1px solid #eee;
-    padding: 1rem;
-    
+    padding: .5rem;
+    margin: 0;
+
 }
 
 .fa-twitter:hover,
@@ -101,7 +113,7 @@ body {
 .fa-instagram:focus,
 .fa-instagram:active {
     background-color:#dd297c;
-    
+
 }
 .fa-google-plus-official:hover,
 .fa-google-plus-official:focus,
@@ -119,7 +131,7 @@ body {
     background-position: center center;
     color:#ffffff;
     width:100%;
-    
+
 }
 #slider .carousel-indicators {
     visibility: hidden;
@@ -152,7 +164,7 @@ body {
 
 .item h3 p {
     font-family: 'Quicksand', sans-serif;
-    
+
 }
 .item p {
     font-size:1.3rem
@@ -300,13 +312,13 @@ body {
     min-height:300px;
 }
 #test .carousel-indicators {
-  margin-bottom:100px;
+  margin-bottom:  150px;
 }
 #test blockquote {
     border-left:none;
 }
 #test .carousel-inner {
-    margin-top:2px;
+    margin-top: 3rem;
 }
 
 /*team*/
@@ -417,7 +429,7 @@ body {
     width:10%;
     text-align: center;
     text-decoration: none;
-    margin-left: 510px;
+    margin: 0 auto;
 }
 
 #signup .button-wrapper>a {
@@ -439,7 +451,7 @@ body {
 /*contact*/
 #contacts {
     padding: 10px 0;
-    background-color:#eee; 
+    background-color:#eee;
 }
 
 #contacts .title {
@@ -497,7 +509,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 
-    /* Custom, iPhone Retina */ 
+    /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
         .navbar-brand>img {
             width:80px;
@@ -510,7 +522,7 @@ body {
         .navbar-default {
             height:20px;
         }
-        
+
         #slider {
             height:auto;
         }
@@ -523,20 +535,28 @@ body {
         .big-case {
             margin-left:1rem;
         }
-        
+        #design .title {
+          text-align: center;
+          float: none;
+        }
+        #television .title {
+          text-align: center;
+          float: none;
+        }
+
     }
 
-    /* Extra Small Devices, Phones */ 
+    /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
          .navbar-brand>img {
             width:80px;
              height:60px;
         }
-        
+
         .navbar-default {
             height:20px;
         }
-        
+
         #slider {
             height:auto;
         }
@@ -557,28 +577,36 @@ body {
         .item h3 {
             font-size:2rem;
         }
-        
+
         #history {
             text-align: center;
         }
         #services {
             text-align: center;
         }
-        
+
         #services li {
             width:50%;
         }
-        
+
         #contacts {
             text-align: center;
         }
-		
+
 		#design {
 			text-align: center;
 		}
 		#television {
 			text-align: center;
 		}
+    #design .title {
+      text-align: center;
+      float: none;
+    }
+    #television .title {
+      text-align: center;
+      float: none;
+    }
 
     }
 
@@ -592,23 +620,37 @@ body {
         .navbar-brand .caption {
             font-size:3rem;
             letter-spacing:.9rem;
-            
+
         }
         .navbar-brand>span {
             margin-top:3rem;
         }
-        
+
         .navbar-nav>li{
             margin-right:.7rem;
         }
         
+        .navbar-toggle {
+            margin: 6rem 0 0 0;
+        }
+        
+        .navbar-nav {
+            margin: 4rem 0 0 0;
+            padding: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .navbar-nav>li {
+            margin: 0;
+        }
+
         .big-case {
             margin-left:2rem;
         }
         #slider .carousel-inner .item h1{
             line-height: .9rem;
         }
-        
+
         #test {
             text-align: center;
         }
@@ -616,9 +658,26 @@ body {
             text-align: center;
         }
         #signup .button-wrapper {
-            margin-left:110px;
             width:20%;
+            margin: 0 auto;
         }
+
+        		#design {
+        			text-align: center;
+        		}
+            #design .title {
+              text-align: center;
+              float: none;
+            }
+
+        		#television {
+        			text-align: center;
+        		}
+
+            #television .title {
+              text-align: center;
+              float: none;
+            }
     }
 
     /* Medium Devices, Desktops */
@@ -626,8 +685,8 @@ body {
         #slider .carousel-inner .item h1 {
             line-height: 2.5rem;
         }
-        
-        
+
+
 
     }
 
@@ -654,41 +713,12 @@ body {
 
     }
 
-    /* Extra Small Devices, Phones */ 
+    /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
 
     }
 
-    /* Custom, iPhone Retina */ 
+    /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
-        
+
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
